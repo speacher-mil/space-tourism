@@ -1,13 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+const assetData = require('./public/template/data.json');
+
 module.exports = {
   darkMode: ['class'],
   content: ['./src/**/*.{ts,tsx}'],
   prefix: '',
   theme: {
-    colors: {
-      'blue-900': '#0B0D17',
-      'blue-300': '#D0D6F9',
-    },
     container: {
       center: true,
       padding: '2rem',
@@ -16,6 +14,14 @@ module.exports = {
       },
     },
     extend: {
+      colors: {
+        'blue-900': '#0B0D17',
+        'blue-300': '#D0D6F9',
+      },
+      backgroundImage: {
+        'home-desktop':
+          'url("../../public/assets/home/background-home-desktop.jpg")',
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
