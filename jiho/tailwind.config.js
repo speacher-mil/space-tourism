@@ -21,6 +21,12 @@ module.exports = {
       backgroundImage: {
         'home-desktop':
           'url("../../public/assets/home/background-home-desktop.jpg")',
+        'destination-desktop':
+          'url("../../public/assets/destination/background-destination-desktop.jpg")',
+        'crew-desktop':
+          'url("../../public/assets/crew/background-crew-desktop.jpg")',
+        'technology-desktop':
+          'url("../../public/assets/technology/background-technology-desktop.jpg")',
       },
       keyframes: {
         'accordion-down': {

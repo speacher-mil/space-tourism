@@ -4,10 +4,10 @@ import NavigationBar from '@/components/navigation/navigation-bar';
 
 export default function HomePage() {
   return (
-    <main className="bg-home-desktop flex min-h-screen flex-col space-y-8 bg-cover">
+    <main className="flex min-h-screen flex-col space-y-8 bg-home-desktop bg-cover">
       <NavigationBar />
       <article className="flex flex-row px-36 pt-80">
-        <div className="text-white w-[45vw] flex-col pr-24">
+        <div className="w-[45vw] flex-col pr-24 text-white">
           <h3 className="text-3xl">So, you want to travel to</h3>
           <h1 className="text-9xl">Space</h1>
           <div className="mt-12">
@@ -19,10 +19,10 @@ export default function HomePage() {
         </div>
         <div className="flex h-full w-[40vw] items-center justify-end">
           <Link
-            href="/crew"
-            className="bg-white/0 hover:bg-white/10 flex h-80 w-80 items-center justify-center rounded-full transition-colors duration-200"
+            href="/destination"
+            className="flex h-80 w-80 items-center justify-center rounded-full bg-white/0 transition-colors duration-200 hover:bg-white/10"
           >
-            <div className="bg-white flex h-60 w-60 items-center justify-center rounded-full">
+            <div className="flex h-60 w-60 items-center justify-center rounded-full bg-white">
               <div className="text-3xl uppercase">Explore</div>
             </div>
           </Link>
